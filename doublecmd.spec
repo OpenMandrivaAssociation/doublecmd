@@ -2,9 +2,9 @@
  
 Name:           doublecmd
 Version:        1.1.7
-Release:        1%{?dist}
+Release:        1
 Summary:        Cross platform open source file manager with two panels
- 
+Group:          File tools
 # Full licenses description in licensecheck.txt file
 License:        GPL-2.0-or-later AND LGPL-2.0-or-later AND MIT AND MPL-1.1 AND MPL-2.0 AND Apache-2.0 AND BSD-2-Clause AND Zlib
 URL:            http://doublecmd.sourceforge.net
@@ -19,8 +19,7 @@ BuildRequires:  fpc-src
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(gtk+-2.0)
 BuildRequires:  lazarus >= 1.0.0
-BuildRequires:  lazarus-lcl-gtk2
-BuildRequires:  lazarus-lcl-qt5
+BuildRequires:  %{_lib}Qt5Pas
 BuildRequires:  pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:  pkgconfig(ncurses)
 BuildRequires:  pkgconfig(dbus-1)
@@ -30,9 +29,7 @@ BuildRequires:  pkgconfig(xtrans)
 BuildRequires:  util-linux
 BuildRequires:  pkgconfig(pango)
 BuildRequires:  desktop-file-utils
-BuildRequires:  libappstream-glib
- 
-ExclusiveArch:  %{ix86} x86_64
+BuildRequires:  appstream-util
  
 %description
 Double Commander GTK2 is a cross platform open source file manager with two
@@ -73,7 +70,6 @@ Common files for Double Commander GTK2 and Qt.
 chmod +x install/linux/install-help.sh
 # Sure to not use libbz2 and libssh2 bundling
 rm -rf libraries
- 
  
 %build
 lcl=qt5 ./build.sh beta
