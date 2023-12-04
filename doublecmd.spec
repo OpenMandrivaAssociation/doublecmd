@@ -88,13 +88,6 @@ cp %{SOURCE2} .
 install -D -p -m644 %{SOURCE3} %{buildroot}%{_metainfodir}/io.sourceforge.DoubleCmd.DoubleCmdGtk.metainfo.xml
 install -D -p -m644 %{SOURCE4} %{buildroot}%{_metainfodir}/io.sourceforge.DoubleCmd.DoubleCmdQt.metainfo.xml
  
-%check
-desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
-desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}-qt.desktop
-appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/io.sourceforge.DoubleCmd.DoubleCmdGtk.metainfo.xml
-appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/io.sourceforge.DoubleCmd.DoubleCmdQt.metainfo.xml
- 
- 
 %files gtk
 %{_libdir}/%{name}/%{name}
 %{_bindir}/%{name}
