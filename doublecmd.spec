@@ -30,6 +30,7 @@ BuildRequires:  util-linux
 BuildRequires:  pkgconfig(pango)
 BuildRequires:  desktop-file-utils
 BuildRequires:  appstream-util
+BuildRequires:  which
  
 %description
 Double Commander GTK2 is a cross platform open source file manager with two
