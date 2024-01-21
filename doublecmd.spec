@@ -1,13 +1,13 @@
 %global debug_package %{nil}
  
 Name:           doublecmd
-Version:        1.1.8
+Version:        1.1.9
 Release:        1
 Summary:        Cross platform open source file manager with two panels
 Group:          File tools
 # Full licenses description in licensecheck.txt file
 License:        GPL-2.0-or-later AND LGPL-2.0-or-later AND MIT AND MPL-1.1 AND MPL-2.0 AND Apache-2.0 AND BSD-2-Clause AND Zlib
-URL:            http://doublecmd.sourceforge.net
+URL:            https://doublecmd.sourceforge.net
 Source0:        https://sourceforge.net/projects/%{name}/files/Double%20Commander%20Source/%{name}-%{version}-src.tar.gz
 Source1:        %{name}-qt.desktop
 Source2:        licensecheck.txt
