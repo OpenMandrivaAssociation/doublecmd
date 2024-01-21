@@ -68,7 +68,7 @@ Common files for Double Commander GTK2 and Qt.
  
 %prep
 %autosetup -p0
-chmod +x install/linux/install-help.sh
+chmod +x install/linux/install.sh
 # Sure to not use libbz2 and libssh2 bundling
 rm -rf libraries
  
