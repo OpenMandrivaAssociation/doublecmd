@@ -2,7 +2,7 @@
  
 Name:           doublecmd
 Version:        1.1.10
-Release:        1
+Release:        2
 Summary:        Cross platform open source file manager with two panels
 Group:          File tools
 # Full licenses description in licensecheck.txt file
@@ -19,7 +19,6 @@ BuildRequires:  fpc-src
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(gtk+-2.0)
 BuildRequires:  lazarus >= 1.0.0
-BuildRequires:  %{_lib}Qt5Pas
 BuildRequires:  pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:  pkgconfig(ncurses)
 BuildRequires:  pkgconfig(dbus-1)
@@ -48,12 +47,12 @@ panels side by side.
 It is inspired by Total Commander and features some new ideas.
  
 %package        qt
-Summary:        Twin-panel (commander-style) file manager (Qt5)
+Summary:        Twin-panel (commander-style) file manager (Qt6)
 Group:          File tools
 Requires:       %{name}-common%{?_isa} = %{version}-%{release}
  
 %description    qt
-Double Commander QT5 is a cross platform open source file manager with two
+Double Commander QT6 is a cross platform open source file manager with two
 panels side by side.
 It is inspired by Total Commander and features some new ideas.
  
@@ -73,7 +72,7 @@ chmod +x install/linux/install.sh
 rm -rf libraries
  
 %build
-lcl=qt5 ./build.sh beta
+lcl=qt6 ./build.sh beta
 mv ./%name ./%name-qt
 mv ./%name.zdli ./%name-qt.zdli
 ./clean.sh
