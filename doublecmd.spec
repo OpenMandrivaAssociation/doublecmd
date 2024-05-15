@@ -1,8 +1,8 @@
 %global debug_package %{nil}
  
 Name:           doublecmd
-Version:        1.1.10
-Release:        2
+Version:        1.1.14
+Release:        1
 Summary:        Cross platform open source file manager with two panels
 Group:          File tools
 # Full licenses description in licensecheck.txt file
