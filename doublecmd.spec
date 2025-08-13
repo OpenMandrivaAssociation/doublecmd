@@ -1,7 +1,7 @@
 %global debug_package %{nil}
  
 Name:           doublecmd
-Version:        1.1.27
+Version:        1.1.28
 Release:        1
 Summary:        Cross platform open source file manager with two panels
 Group:          File tools
