@@ -1,7 +1,7 @@
 %global debug_package %{nil}
  
 Name:           doublecmd
-Version:        1.1.32
+Version:        1.2.5
 Release:        1
 Summary:        Cross platform open source file manager with two panels
 Group:          File tools
@@ -25,6 +25,7 @@ BuildRequires:  pkgconfig(dbus-1)
 BuildRequires:  pkgconfig(bzip2)
 BuildRequires:  pkgconfig(xproto)
 BuildRequires:  pkgconfig(xtrans)
+BuildRequires:  pkgconfig(wayland-client)
 BuildRequires:  util-linux
 BuildRequires:  pkgconfig(pango)
 BuildRequires:  desktop-file-utils
